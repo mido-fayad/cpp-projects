@@ -1,18 +1,24 @@
 #include <iostream>
 using namespace std;
+#include <string>
 int main() {
-    int grade;
+    int grade=100;
     cout << "enter your grade \n";
     cin >> grade;
-    if (grade >= 60) {
+    if (grade >= 50 && grade <=100) {
         cout << "your success \n";
     }
-     else if (grade < 60) 
+     else if (grade > 100) 
     {
-        cout << "your failed \n";
+        cout << "invalid grade\n";
     }
-    else {
-        cout << "invalid grade \n";
+     else if (grade < 0) 
+    {
+        cout << "invalid grade\n";
+    }
+    else 
+    {
+        cout << "you failed\n";
     }
     return 0;
 }
